@@ -13,7 +13,7 @@ public class SeleniumTestS16 {
 		//because the constructor of the 'SeleniumS16' class is 'private'
 		//SeleniumS16 sel = new SeleniumS16();//invalid
 		
-		//
+		//System class:
 		//We cannot create Object for System class
 		//System sys = new System();//Reason is: private constructor
 		//Error: The constructor System() is not visible
