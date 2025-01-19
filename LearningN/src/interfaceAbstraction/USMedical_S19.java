@@ -2,6 +2,8 @@ package interfaceAbstraction;
 
 public interface USMedical_S19 extends WHO_S19{
 	
+	//we cannot create constructors and Objects of the interfaces
+	
 	//Can interface have global variables
 	//yes, but they are by default static and final
 	int min_fee = 100;
