@@ -25,7 +25,7 @@ public class countDuplicateNosInArray {
 				//}
 			//}
 		}
-		System.out.println(c);
+		System.out.println(filter);
 		return filter;
 	}
 	

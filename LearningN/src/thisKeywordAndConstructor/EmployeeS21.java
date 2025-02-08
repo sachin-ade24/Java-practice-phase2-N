@@ -37,13 +37,6 @@ public class EmployeeS21 extends CompanyS21{
 		//but this line 'this("Tom", 30);' is preventing us to create
 		//unnecessary object using parameterized constructor
 		
-		
-		
-		
-		
-		
-		
-		
 
 	}
 

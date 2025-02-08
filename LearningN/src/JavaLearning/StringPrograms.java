@@ -1,5 +1,6 @@
 package JavaLearning;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -334,19 +335,23 @@ public class StringPrograms {
 		}
 		System.out.println();
 		//Count the alphabets occurring repeatedly
-		String str7 = "AAaa ssSS edt dddd tt xzxzyt";
-		for(int i=0; i<str7.length(); i++) {
-			if((i+1)<str7.length()&&(i+2)<str7.length()&&(i+3)<str7.length()) {
-				if((str7.charAt(i)==str7.charAt(i+1))){
-					if((str7.charAt(i) == str7.charAt(i+2))) {
-						i=i+2;
-					}else {
-						System.out.println(str7.charAt(i));
+		String str7 = "AAaa ssSS eee tTyt";	
+		int countDuplicateChar = 0;
+		ArrayList<Character> chAl = new ArrayList <Character>();
+		char[] charArr = str7.toCharArray();
+		for(int ca=0; ca<=charArr.length-1; ca++) {
+			for(int cha=ca+1; cha<=charArr.length-1; cha++) {
+				if(charArr[ca]==charArr[cha]) {
+					if(!chAl.contains(charArr[ca])) {
+						chAl.add(charArr[ca]);
+						countDuplicateChar++;
 					}
 				}
 			}
 		}
-		
+		System.out.println("========================================");
+		System.out.println("char array chAl: "+ chAl);
+		System.out.println(countDuplicateChar);
 		
 		System.out.println("========================================");
 		//String str = "Hi, this is my Java code and I am so happy.";
@@ -358,7 +363,7 @@ public class StringPrograms {
 		//toCharArray():
 		System.out.println(str.toCharArray());
 		char [] ch1 = str.toCharArray();
-		System.out.println(Arrays.toString(ch1));
+		System.out.println("Char array: " + Arrays.toString(ch1));
 		System.out.println(Arrays.toString(str.toCharArray()));
 		//Returns a string representation of the contents of the specified array.
 		

@@ -31,9 +31,6 @@ public class AppTestS20 {
 		//down casting --> not applicable
 		
 		
-		
-		
-		
 	}
 
 }

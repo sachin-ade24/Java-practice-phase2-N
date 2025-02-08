@@ -79,6 +79,7 @@ public class StringManipulation {
 		// a portion of the StringBuilder content with a specified string. 
 		// The method modifies the original StringBuilder object.
 		System.out.println(sb.reverse());//iH
+		//System.out.println(sb.);
 		// System.out.println(sb.reverse().toString());//iH
 		System.out.println(sb);//iH
 		System.out.println(newStr);//Hi
@@ -205,20 +206,6 @@ public class StringManipulation {
 			}
 		}
 		System.out.println(s3);//Welcome
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 		
 	}

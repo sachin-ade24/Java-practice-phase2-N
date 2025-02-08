@@ -11,7 +11,7 @@ public class A {
 		//Call 'B' class main method
 		B.main(args);
 		
-		//now, while execution happens:
+		//now, while execution what happens:
 		//two stacks will be created into the stack
 		//one for class 'A' main method
 		//Another one for class 'B' main method

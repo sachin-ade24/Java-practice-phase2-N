@@ -9,7 +9,7 @@ public interface USMedical_S19 extends WHO_S19{
 	int min_fee = 100;
 
 	//In interface we cannot define the method body
-	//Mean no method body or no method implementation
+	//Meaning no method body or no method implementation
 	//only method declaration - only method prototype
 	//We cannot create an Object of the interface
 	

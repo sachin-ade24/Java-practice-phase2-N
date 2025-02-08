@@ -101,7 +101,7 @@ public class CarTestS17 {
 		
 		//Car class static method cannot be overridden by BMW or Audi
 		//BMW or Audi can hide the static method of Car class by
-		//creating their own static method with 
+		// Creating their own static method with 
 		//same name (which is in Car class)
 		//but, static method of parent can be inherited by child
 		//b.billing();//better use class name

@@ -2,6 +2,7 @@ package ArrayListConcept;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class ArrayListMethods {
@@ -88,10 +89,46 @@ public class ArrayListMethods {
 		//You cannot add a new object in it
 		List<Integer> ls = Arrays.asList(100, 200, 300, 400);
 		System.out.println(ls);//[100, 200, 300, 400]
-		ls.add(500);
-		System.out.println(ls);//UnsupportedOperationException
+		//ls.add(500);
+		//System.out.println(ls);//UnsupportedOperationException
 		//Cannot add a new object here
 		
+		System.out.println("================================================");
+		
+		browserList.remove(3);
+		browserList.add("opera");
+		browserList.add("brave");
+		browserList.add("safari");
+		System.out.println(browserList);
+		
+		Collections.sort(browserList);
+		System.out.println(browserList);
+		
+		
+		//
+		System.out.println("=============================================");
+		ArrayList<Integer> markList = new ArrayList();//vc=10, pc=0
+		//vc=10, pc=0
+		markList.add(80);//vc=9, pc=1
+		markList.add(70);//vc=8, pc=2
+		markList.add(10);//vc=7, pc=3
+		markList.add(4);//vc=6, pc=4
+		markList.add(700);//vc=5, pc=5
+		System.out.println(markList);//[80, 70, 10, 4, 700]
+		//sort:
+		//Collections.sort(markList);
+		//System.out.println(markList);//[4, 10, 70, 80, 700]
+		//reverse:
+		//Collections.reverse(markList);
+		//System.out.println(markList);//[700, 4, 10, 70, 80]
+		//reverseOrder
+		//Collections.sort(markList, Collections.reverseOrder());
+		//System.out.println(markList);//[700, 80, 70, 10, 4]
+		
+		Collections.swap(markList, 0, 4);
+		System.out.println(markList);//[700, 70, 10, 4, 80]
+		Collections.swap(markList, 0, markList.size()-1);
+		System.out.println(markList);//[80, 70, 10, 4, 700]
 		
 		
 	}

@@ -61,8 +61,8 @@ public class InterviewPrograms {
 //		System.out.println("LCM is: "+((e*f)/h));
 		
 		//Sum of first 10 natural no.
-		int i, m=0;
-		for(i=1; i<=10; i++) {
+		int i, m=1;
+		for(i=2; i<=10; i++) {
 			m=i+m;
 		}
 		System.out.println("Addition of first 10 natural no. is: " + m);//55
@@ -79,8 +79,8 @@ public class InterviewPrograms {
 		int n=1, p=0;
 		for(i=1; i<=10; i++) {
 			p=m+n;
-			m=n;
-			n=p;
+			m=n;//first number
+			n=p;//second number
 			System.out.print(p + " ");
 		}
 		System.out.println();
@@ -115,9 +115,18 @@ public class InterviewPrograms {
 		
 		System.out.println();
 		
-		
-
-		
+		//GCD
+		int a1 = 20, b1 = 50, g = 1, c1;
+		for(c1=g; (c1<=a1)||(c1<=b1); c1++) {
+			if((a1%c1==0)&&(b1%c1==0)) {
+				//System.out.println(c1);
+				g=c1;
+			}
+		}
+		System.out.println(g);
+		//LCM
+		int lcm = (a1*b1)/g;
+		System.out.println(lcm);
 	}
 
 }
