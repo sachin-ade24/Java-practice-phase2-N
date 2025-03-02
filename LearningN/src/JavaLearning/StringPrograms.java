@@ -344,14 +344,14 @@ public class StringPrograms {
 				if(charArr[ca]==charArr[cha]) {
 					if(!chAl.contains(charArr[ca])) {
 						chAl.add(charArr[ca]);
-						countDuplicateChar++;
+						//countDuplicateChar++;
 					}
 				}
 			}
 		}
 		System.out.println("========================================");
 		System.out.println("char array chAl: "+ chAl);
-		System.out.println(countDuplicateChar);
+		//System.out.println(countDuplicateChar);
 		
 		System.out.println("========================================");
 		//String str = "Hi, this is my Java code and I am so happy.";

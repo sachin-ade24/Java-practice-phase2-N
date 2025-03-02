@@ -86,13 +86,6 @@ public class StringConcept {
 		
 		System.out.println(x + c1 + ch + bh + c2 + y);// o/p: Hello0ab1Selenium
 		
-		
-		
-		
-		
-		
-		
-		
 
 	}
 
