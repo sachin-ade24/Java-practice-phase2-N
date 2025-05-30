@@ -18,7 +18,7 @@ public class BMW_S18 extends CarS18{
 		//Note 1: The 'super' statement must be the first statement for
 		//constructors only
 		super(name, price);
-		//now in this case only it will not go to the default constructor
+		//now in this case it will not go to the default constructor
 		//Note 2: we cannot use back to back 'super' statements
 		
 		System.out.println("BMW_S18 two parameters constructor " 

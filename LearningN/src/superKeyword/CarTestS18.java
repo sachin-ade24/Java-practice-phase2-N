@@ -7,24 +7,6 @@ public class CarTestS18 {
 		BMW_S18 b = new BMW_S18();
 		b.start();
 		b.displaySpeed();
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 
 }

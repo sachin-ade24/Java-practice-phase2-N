@@ -27,14 +27,14 @@ public class BenchmarkPrograms {
 			System.out.println(a[i]);
 		}
 		
-		//2. String
-		String s = "Hello world";
-		StringBuilder sb = new StringBuilder(s);
-		StringBuilder reverseSb = sb.reverse();
-		String reverseSbStr = reverseSb.toString();
-		String r1 = "([A-Za-z]+)(\\s)([A-Za-z]+)";
-		String newString = reverseSbStr.replaceAll(r1, "$3$2$1");
-		System.out.println(newString);
+//		//2. String
+//		String s = "Hello world";
+//		StringBuilder sb = new StringBuilder(s);
+//		StringBuilder reverseSb = sb.reverse();
+//		String reverseSbStr = reverseSb.toString();
+//		String r1 = "([A-Za-z]+)(\\s)([A-Za-z]+)";
+//		String newString = reverseSbStr.replaceAll(r1, "$3$2$1");
+//		System.out.println(newString);
 	}
 
 }

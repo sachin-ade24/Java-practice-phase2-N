@@ -49,7 +49,7 @@ public class CarTesting {
 		//=================================================
 		
 		//CASE 2: Defined a default constructor in 'parent' class
-		//when you call a child constructor or create a Object of the
+		//when you call a child constructor or create an Object of the
 		//child constructor then:
 		//This way, it will go check whether BMW has a default constructor,
 		//if yes, then immediately it will check whether BMW is extending
