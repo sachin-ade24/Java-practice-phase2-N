@@ -1,0 +1,98 @@
+🔷 What is a Thread?
+	- A thread is the smallest unit of a process that can be executed independently.
+	
+	You can think of a thread as a worker inside a program:
+	- Each worker (thread) executes some part of your code.
+	- All threads within the same process share memory.
+	
+	
+🔹 What is Single-threading?
+	- In a single-threaded application:	
+	- There is only one thread (the main thread).
+	- All tasks are executed sequentially, one after another.
+	
+
+🧠 Analogy:
+	Imagine a chef working alone in the kitchen:
+	- He cuts vegetables.
+	- Then he boils water.
+	- Then he cooks the dish.
+	- Only one task is done at a time.
+	
+
+✅ Advantages:
+	- Simpler to write and debug.
+	- No worries about shared memory or thread safety.
+
+❌ Disadvantages:
+	- Slow if there are time-consuming tasks.
+	- Not suitable for high-performance or real-time systems.
+
+
+🔹 What is Multi-threading?
+	In a multi-threaded application:
+	- Multiple threads run concurrently (can overlap in time).
+	- Threads can perform different tasks or even the same task in parallel.
+
+
+🧠 Analogy:
+	Imagine 3 chefs in a kitchen:
+		- One cuts vegetables.
+		- Another boils water.
+		- Another cooks the dish.
+	
+	They work simultaneously, so things finish faster.
+
+
+✅ Advantages:
+	- Faster performance (especially on multi-core CPUs).
+	- Better use of CPU.
+	Useful for tasks like:
+	- File I/O
+	- Network operations
+	- UI responsiveness (in apps)
+
+
+❌ Disadvantages:
+	- Complex to code and debug.
+	- You need to manage:
+		1. Race conditions (threads updating the same data)
+	 	2. Deadlocks (threads waiting forever for each other)
+	 	3. Thread safety (preventing corrupt shared data)
+
+
+
+🔄 Java Example:
+
+🔹 Single Thread Example:
+
+public class SingleThreadExample {
+    public static void main(String[] args) {
+        System.out.println("Task 1");
+        System.out.println("Task 2");
+        System.out.println("Task 3");
+    }
+}
+
+🔹 Multi-Thread Example:
+
+public class MultiThreadExample extends Thread {
+    public void run() {
+        System.out.println("Thread is running: " + Thread.currentThread().getName());
+    }
+
+    public static void main(String[] args) {
+        MultiThreadExample t1 = new MultiThreadExample();
+        MultiThreadExample t2 = new MultiThreadExample();
+
+        t1.start();  // starts thread t1
+        t2.start();  // starts thread t2
+    }
+}
+
+
+📌 Output (may vary each time):
+
+Thread is running: Thread-0
+Thread is running: Thread-1
+Each thread runs independently and asynchronously.

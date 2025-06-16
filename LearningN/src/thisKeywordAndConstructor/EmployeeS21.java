@@ -15,7 +15,7 @@ public class EmployeeS21 extends CompanyS21{
 	
 	public EmployeeS21(String name, int age) {
 		//this();//this has to be first statement
-		super();//this has to be first statement
+		super();//super has to be first statement
 		//so, we cannot use 'this' and 'super' together
 		System.out.println("EmployeeS21 -- 2 param constructor");
 		this.name =  name;

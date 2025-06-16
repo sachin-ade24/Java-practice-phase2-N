@@ -23,12 +23,12 @@ public class CarTesting {
 		
 		BMW_S18 b2 = new BMW_S18("BMW", 50);
 		//o/p:
-		//CarS18 -- default constructor..
+		//CarS18 two param -- constructor.. BMW 50
 		//BMW_S18 two parameters constructor BMW 50
 		
 		//CarS18 c1 = new BMW_S18("BMW", 50);
 		//o/p:
-		//CarS18 -- default constructor..
+		//CarS18 two param -- constructor.. BMW 50
 		//BMW_S18 two parameters constructor BMW 50
 		
 		//CarS18 c2 = new CarS18("Car", 5);

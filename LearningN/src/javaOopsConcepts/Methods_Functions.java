@@ -11,7 +11,20 @@ public class Methods_Functions {
 	
 	public void method1() {
 		System.out.println("This is method1");
+		test();//static method called inside non-static method
 	}
+	
+	/* public static String test1() {
+		System.out.println("This is my test method");
+		String a = "Hello";
+		return a;
+	}
+	
+	public String method11() {
+		System.out.println("This is method1");
+		return test();//static method called inside non-static method
+	}
+	*/
 	
 	public void method2(int i, String s, boolean b, float f, char c) {
 		System.out.println("*********method2 started*********");
@@ -76,15 +89,15 @@ public class Methods_Functions {
 		//If the function is static, we can directly call the function directly
 		//or with its class name
 		//Methods_Functions.test();//Allowed
-		test();//Allowed
+		//test();//Allowed
 		
 		//Non-static
 		//create an object
 		Methods_Functions obj = new Methods_Functions();
 		
 		//
-		obj.method1();
-		System.out.println(obj.intNonStaticMethod());//6
+//		obj.method1();
+//		System.out.println(obj.intNonStaticMethod());//6
 		
 		//
 		obj.method2( 4, "Java", true, 4.4f, 'A');
@@ -102,6 +115,7 @@ public class Methods_Functions {
 		System.out.println(obj.mb2());//false
 		
 		System.out.println(obj.mb3());//true
+		
 	}
 
 }

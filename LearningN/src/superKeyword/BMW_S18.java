@@ -21,6 +21,9 @@ public class BMW_S18 extends CarS18{
 		super.start();
 		
 		System.out.println("BMW -- start");
+		
+		//We can create an object of current class within its own method
+		//BMW_S18 bm =  new BMW_S18();
 	}
 	
 	public void displaySpeed() {
@@ -33,6 +36,8 @@ public class BMW_S18 extends CarS18{
 		System.out.println(super.speed);//100
 		
 		System.out.println(speed);//200
+		//if --> static int speed = 200;
+		//then --> System.out.println(BMW_S18.speed);//200
 		
 		//Can we use grand parent speed property using 'super' keyword
 		//if we comment Car class's speed, then it will display Vehicle
