@@ -19,6 +19,12 @@ public class HRDepartmentS19 implements DepartmentS19{
 	public void accountSummary() {
 		System.out.println("accountSummary: 10000 USD");
 	}
+
+	@Override
+	public void m1() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 	

@@ -63,6 +63,8 @@ public class BMW_S17 extends CarS17{
 	
 	public void getBMWInfo() {
 		getCarInfo();
+		CarS17 cb = new BMW_S17();
+		cb.getInfo();
 	}
 	
 }
