@@ -171,6 +171,7 @@ public class StringPrograms {
 		
 		
 		// matches:
+		//String str = "Hi, this is my Java code and I am so happy.";
 		String s = "SacKal2418";
 		System.out.println(str.matches("Java"));//false
 		System.out.println(str.matches(".*,.*"));//true
