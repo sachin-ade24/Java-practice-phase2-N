@@ -122,7 +122,7 @@ public class StringInterviewPractice {
 		}
 		System.out.println(reverse.toString());
 		
-		
+		//
 		String strg = "..geeks..for.geeks.";
 		System.out.println(strg.replaceAll("^\\.+|\\.$", ""));
 		String[] newArr = strg.split("\\.");
@@ -136,7 +136,18 @@ public class StringInterviewPractice {
 		System.out.println(revStrg.toString());
 		String newString1 = revStrg.toString();
 		String newString2 = newString1.replaceAll("\\.+", ".");
-		System.out.println(newString2.replaceAll("\\.$", ""));
+		System.out.println(newString2.replaceAll("\\.$", "")); //output is 'geeks.for.geeks'
+
+		//
+		String strng ="..sachin..is.sachin.";
+		String strng1 = strng.replaceAll("[.]", " ");
+		String strng2 = strng1.trim().replace("  ", " ");
+		System.out.println(strng2);
+		String strng3 = strng2.replaceAll(" ", ".");
+		System.out.println(strng3);
+		
+		// String strngNew = strng.replaceAll("[.]", " ").trim().replace("  ", " ").replaceAll(" ", ".");
+		// System.out.println(strngNew); //sachin.is.sachin
 		
 		//regex pattern
 		String email = "test@example.com";
