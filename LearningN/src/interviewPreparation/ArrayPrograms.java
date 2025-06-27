@@ -100,5 +100,30 @@ public class ArrayPrograms {
           arr3[arr3.length-1] = firstEle;
       }
       System.out.println(Arrays.toString(arr3));
+      
+		// Largest no. in an Array
+		int b[] = {333, 3, 34, 10, 4, 55, 1000};
+		int j = b[0];
+		//if you initialize 'j' with any bigger number than the biggest array element,
+		//it will return the value of 'j' only.
+		for(int i=0; i<=b.length-1; i++) {
+			if(b[i]>j) {
+				j=b[i];
+			}
+		}
+		System.out.println(j + " is the largest number in the given array.");//1000
+		System.out.println(Arrays.toString(b));
+		
+		// Smallest no.
+		for(int i=0; i<=b.length-1; i++) {
+			if(b[i]<j) {
+				j=b[i];
+			}
+		}
+		System.out.println(j + " is the smallest number in the given array.");//3
+		System.out.println(Arrays.toString(b));
+		
+		System.out.println("=========================");
+      
 	}
 }

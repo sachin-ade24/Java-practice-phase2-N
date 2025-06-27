@@ -40,7 +40,7 @@ public class ArraysInterviewPrograms {
 		
 		// Largest no. in an Array
 		// int b[] = {333, 3, 34, 10, 4, 55, 1000};
-		int j = b[b.length-1];
+		int j = b[0];
 		//if you initialize 'j' with any bigger number than the biggest array element,
 		//it will return the value of 'j' only.
 		for(i=0; i<=b.length-1; i++) {
