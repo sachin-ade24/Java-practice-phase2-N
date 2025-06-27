@@ -126,6 +126,7 @@ public class ArrayPrograms {
 		System.out.println("=========================");
 
 		    // Adjacent duplicate numbers
+		    int[] intArr = {2, 2, 3, 4, 5, 5, 7, 7, 4};
 		    ArrayList<Integer> duplicateNoList = new ArrayList<Integer>();
     
 		    for(int i=0; i<intArr.length-1; i++){
