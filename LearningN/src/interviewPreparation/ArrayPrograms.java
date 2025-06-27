@@ -156,8 +156,10 @@ public class ArrayPrograms {
 		      if (allNumbers.indexOf(num) == allNumbers.lastIndexOf(num)) {
 		        uniqueNumbers.add(num);
 		      }
-		    }
+		    }		    
+                    System.out.println("Unique numbers: " + uniqueNumbers);
 
+		
                     //Unique numbers and remove duplicates using HashMap
 		    int[] intArr = {2, 2, 3, 4, 5, 5, 7, 7};
 		
