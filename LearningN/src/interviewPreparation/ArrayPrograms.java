@@ -138,46 +138,40 @@ public class ArrayPrograms {
 		    }
 		    System.out.println(duplicateNoList);
 
-
+		System.out.println("=========================");
 		
                     //Unique numbers and remove duplicates using ArrayList
-		    int[] intArr = {2, 2, 3, 4, 5, 5, 7, 7};
-		
-		    ArrayList<Integer> allNumbers = new ArrayList<>();
-		    ArrayList<Integer> uniqueNumbers = new ArrayList<>();
-		
-		    // Add all numbers to allNumbers list
-		    for (int num : intArr) {
-		      allNumbers.add(num);
-		    }
-		
-		    // Check for uniqueness
-		    for (int num : allNumbers) {
-		      if (allNumbers.indexOf(num) == allNumbers.lastIndexOf(num)) {
-		        uniqueNumbers.add(num);
-		      }
-		    }		    
-                    System.out.println("Unique numbers: " + uniqueNumbers);
+   		    int[] intArr = {2, 2, 3, 4, 5, 5, 7, 7, 1};
+		    ArrayList<Integer> allNum = new ArrayList<Integer>();
+		    ArrayList<Integer> uniqueNum =  new ArrayList<Integer>();
+		    for(int i: intArr){
+		    	allNum.add(i);
+		    }
+		    System.out.println(allNum);
+		    
+		    for(int j: allNum){
+		    	if(allNum.indexOf(j)==allNum.lastIndexOf(j)){
+		        	uniqueNum.add(j);
+		        }
+		    }
+		    System.out.println(uniqueNum);
 
+		System.out.println("=========================");
 		
                     //Unique numbers and remove duplicates using HashMap
-		    int[] intArr = {2, 2, 3, 4, 5, 5, 7, 7};
-		
+		    int[] intArr = {2, 2, 3, 4, 5, 5, 7, 7};		
 		    HashMap<Integer, Integer> countMap = new HashMap<>();
-		    ArrayList<Integer> uniqueList = new ArrayList<>();
-		
+		    ArrayList<Integer> uniqueList = new ArrayList<>();		
 		    // Count occurrences of each number
 		    for (int num : intArr) {
 		      countMap.put(num, countMap.getOrDefault(num, 0) + 1);
-		    }
-		
+		    }		
 		    // Add only numbers that appear once
 		    for (int num : intArr) {
 		      if (countMap.get(num) == 1) {
 		        uniqueList.add(num);
 		      }
-		    }
-		
+		    }		
 		    System.out.println("Unique numbers: " + uniqueList);
       
 	}
