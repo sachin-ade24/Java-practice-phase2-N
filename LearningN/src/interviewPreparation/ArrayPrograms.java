@@ -124,6 +124,18 @@ public class ArrayPrograms {
 		System.out.println(Arrays.toString(b));
 		
 		System.out.println("=========================");
+
+		    // Adjacent duplicate numbers
+		    ArrayList<Integer> duplicateNoList = new ArrayList<Integer>();
+    
+		    for(int i=0; i<intArr.length-1; i++){
+				if(intArr[i]==intArr[i+1]){
+		        	if(!(duplicateNoList.contains(intArr[i]))){
+		            	duplicateNoList.add(intArr[i]);
+		            }
+		        }
+		    }
+		    System.out.println(duplicateNoList);
       
 	}
 }
