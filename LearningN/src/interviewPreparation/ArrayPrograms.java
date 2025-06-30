@@ -2,6 +2,7 @@ package interviewPreparation;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class ArrayPrograms {
 
@@ -141,38 +142,39 @@ public class ArrayPrograms {
 		System.out.println("=========================");
 		
                     //Unique numbers and remove duplicates using ArrayList
-   		    int[] intArr = {2, 2, 3, 4, 5, 5, 7, 7, 1};
+   		    int[] intArrNew = {2, 2, 3, 4, 5, 5, 7, 7, 1};
 		    ArrayList<Integer> allNum = new ArrayList<Integer>();
 		    ArrayList<Integer> uniqueNum =  new ArrayList<Integer>();
-		    for(int i: intArr){
+		    for(int i: intArrNew){
 		    	allNum.add(i);
 		    }
 		    System.out.println(allNum);
 		    
-		    for(int j: allNum){
-		    	if(allNum.indexOf(j)==allNum.lastIndexOf(j)){
-		        	uniqueNum.add(j);
+		    for(int j1: allNum){
+		    	if(allNum.indexOf(j1)==allNum.lastIndexOf(j1)){
+		        	uniqueNum.add(j1);
 		        }
 		    }
 		    System.out.println(uniqueNum);
 
 		System.out.println("=========================");
 		
-                    //Unique numbers and remove duplicates using HashMap
-		    int[] intArr = {2, 2, 3, 4, 5, 5, 7, 7};		
-		    HashMap<Integer, Integer> countMap = new HashMap<>();
-		    ArrayList<Integer> uniqueList = new ArrayList<>();		
-		    // Count occurrences of each number
-		    for (int num : intArr) {
-		      countMap.put(num, countMap.getOrDefault(num, 0) + 1);
-		    }		
-		    // Add only numbers that appear once
-		    for (int num : intArr) {
-		      if (countMap.get(num) == 1) {
-		        uniqueList.add(num);
-		      }
-		    }		
-		    System.out.println("Unique numbers: " + uniqueList);
+        //Unique numbers and remove duplicates using HashMap
+
+		int[] intArr1 = {2, 2, 3, 4, 5, 5, 7, 7};		
+		HashMap<Integer, Integer> countMap = new HashMap<>();
+		ArrayList<Integer> uniqueList = new ArrayList<>();		
+		// Count occurrences of each number
+		for (int number : intArr1) {
+			countMap.put(number, countMap.getOrDefault(number, 0) + 1);
+		}		
+		// Add only numbers that appear once
+		for (int number : intArr1) {
+			if (countMap.get(number) == 1) {
+				uniqueList.add(number);
+			}
+		}		
+		System.out.println("Unique numbers: " + uniqueList);
       
 	}
 }

@@ -69,7 +69,33 @@ public class StringPrograms {
 		System.out.println(str.indexOf("e", str.indexOf("e")+1));
 		System.out.println(str.indexOf("a", str.indexOf("a", str.indexOf("a", str.indexOf("a", str.indexOf("a")+1)+1)+1)+1));//12
 		
+		//Recursively remove all adjacent duplicates from a given string
+		String s4 = "abbacbbca";
+		System.out.println(m(s4));
 		
+		String s5 = "Sachin Ade";
+		StringBuilder sb1 = new StringBuilder(s5);
+		sb1.reverse();
+		System.out.println(sb1);
+		for(int i=s5.length()-1; i>=0; i--) {
+			System.out.print(s5.charAt(i));
+		}
+	}
+	
+	public static String m(String str) {
+		
+		StringBuilder sb = new StringBuilder();
+		
+		for(char c: str.toCharArray()) {
+			int lengthOfSb = sb.length();
+			if(lengthOfSb>0 && sb.charAt(lengthOfSb-1)==c) {
+				sb.deleteCharAt(lengthOfSb-1);
+			}else {
+				sb.append(c);
+			}
+		}
+		
+		return sb.toString();
 		
 	}
 

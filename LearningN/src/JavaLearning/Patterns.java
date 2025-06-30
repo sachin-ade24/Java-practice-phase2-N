@@ -43,25 +43,25 @@ public class Patterns {
 			System.out.println();
 		}
 		
-//		System.out.println("============================");
-//		int k=1;
-//		for(i=1; i<=4; i++) {
-//			for(j=1; j<=i; j++) {
-//				System.out.print(k + " ");
-//				k++;
-//			};
-//			System.out.println();
-//		};
-//		System.out.println("============================");
-//		k=1;
-//		for(i=1; i<=4; i++) {
-//			for(j=i; j<=4; j++) {
-//				System.out.print(k + " ");
-//				k++;
-//			};
-//			System.out.println();
-//		};
-//		System.out.println("============================");
+		System.out.println("============================");
+		int k=1;
+		for(i=1; i<=4; i++) {
+			for(j=1; j<=i; j++) {
+				System.out.print(k + " ");
+				k++;
+			};
+			System.out.println();
+		};
+		System.out.println("============================");
+		k=1;
+		for(i=1; i<=4; i++) {
+			for(j=i; j<=4; j++) {
+				System.out.print(k + " ");
+				k++;
+			};
+			System.out.println();
+		};
+		System.out.println("============================");
 		
 		
 		
