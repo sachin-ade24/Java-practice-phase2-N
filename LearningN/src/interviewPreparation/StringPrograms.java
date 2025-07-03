@@ -80,6 +80,21 @@ public class StringPrograms {
 		for(int i=s5.length()-1; i>=0; i--) {
 			System.out.print(s5.charAt(i));
 		}
+		
+        System.out.println("\n");
+		
+		//palindrome check for string
+		String str2 = "acbca";
+        boolean isPalindrome = true;
+
+        for(int i = 0; i < str2.length() / 2; i++) {
+            if(str2.charAt(i) != str2.charAt(str2.length() - 1 - i)) {
+                isPalindrome = false;
+                break;
+            }
+        }
+
+        System.out.println(isPalindrome);
 	}
 	
 	public static String m(String str) {
