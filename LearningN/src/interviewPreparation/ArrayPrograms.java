@@ -7,6 +7,20 @@ import java.util.HashMap;
 public class ArrayPrograms {
 
 	public static void main(String[] args) {
+
+		//Eliminate duplicate characters from the string
+		String str = "aababdbccdddefghefg";
+	        String[] s = str.split("");
+	        System.out.println(Arrays.toString(s));
+	        //ArrayList<String> arrList =  new ArrayList<String>();
+	        Set<String> newSet = new HashSet<String>();
+	        for(String sr: s){
+	          newSet.add(sr);
+	        }
+	        System.out.println(newSet);     
+	        String result = String.join("", newSet);  
+	        System.out.println(result);
+		
 		
 		//Find number of vowels in the given string -- Wipro interview question
 		
