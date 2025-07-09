@@ -3,6 +3,8 @@ package interviewPreparation;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 
 public class ArrayPrograms {
 
@@ -26,11 +28,11 @@ public class ArrayPrograms {
 		
 		//Approach2
 		char[] arr = {'A', 'E', 'I', 'O', 'U'};
-		String str = "SACHIN BABURAO ADE";
+		String str1 = "SACHIN BABURAO ADE";
 		int counter = 0;
-		for(int i=0; i<str.length(); i++) {
+		for(int i=0; i<str1.length(); i++) {
 			for(int j=0; j<arr.length; j++) {
-				if(str.charAt(i)==arr[j]) {
+				if(str1.charAt(i)==arr[j]) {
 					counter++;
 				}
 			}
