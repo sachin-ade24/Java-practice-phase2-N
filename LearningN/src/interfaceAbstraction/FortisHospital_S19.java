@@ -83,6 +83,9 @@ public class FortisHospital_S19 extends MedicalS19
 	
 	public static void medicalBilling() {
 		System.out.println("FH -- medicalBilling");
+		//MedicalS19 fh = new FortisHospital_S19();//Valid
+		//fh.OPTServices();//Invalid 
+		//fh.medicalRND();//Valid
 	}
 	
 	@Override

@@ -14,6 +14,10 @@ public class UserS15 {
 	boolean isActive;
 	double salary;
 	
+//	public UserS15() {
+//		System.out.println("Default constructor.");
+//	}
+	
 	//right way to write code
 	public UserS15(String name, int age) {
 		this.name = name;//in case both global and local has same name

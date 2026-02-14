@@ -88,6 +88,7 @@ public class DataTypesConcept {
 		System.out.println((float)34.56);
 		System.out.println(14.55);// treats as double
 		System.out.println(14.55f);// treats as float
+		float ft1 = (float) -12.09;
 		
 		System.out.println("============");
 		
