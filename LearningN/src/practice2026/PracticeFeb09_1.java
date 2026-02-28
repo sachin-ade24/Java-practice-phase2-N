@@ -27,15 +27,7 @@ public class PracticeFeb09_1 {
 		
 		//One more way to declare an array
 		int E[] = new int[] {1, 2, 3, 4, 5};
-		System.out.println(E.length);//5
-		
-		
-		
-		
-		
-		
-		
-		
+		System.out.println(E.length);//5				
 		
 	}
 }

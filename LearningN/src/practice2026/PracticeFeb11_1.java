@@ -30,12 +30,6 @@ public class PracticeFeb11_1 {
 		
 		a1.m1();
 		m2();
-		
-		
-		
-		
-		
-		
 
 	}
 

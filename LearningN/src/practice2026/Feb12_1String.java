@@ -2,8 +2,10 @@ package practice2026;
 
 import java.util.Arrays;
 
-public class PracticeFeb12_1 {
+public class Feb12_1String {
 
+	/*THIS CLASS CONTAINS ALMOST 34 STRING METHODS.*/
+	
 	public static void main(String[] args) {
 		
 		String s = "I like Apple very much.. ";
