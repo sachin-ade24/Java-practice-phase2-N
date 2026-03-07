@@ -162,14 +162,6 @@ public class JavaLinkedListMethods {
 		//[Germanium, Gallium Arsenide, Gallium Nitride, Silicon]
 		
 		
-		//6.
-		
-		
-		
-		
-		
-		
-		
 	}
 
 }
