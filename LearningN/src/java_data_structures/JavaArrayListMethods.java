@@ -16,7 +16,7 @@ public class JavaArrayListMethods {
 		List<Integer> l1 = new ArrayList<>();
 		
 		//1.
-		//add(element): Appends the specified element to the end of this list.
+		//add(element e): Appends the specified element to the end of this list.
 		l1.add(0);
 		l1.add(1);
 		l1.add(2);
@@ -27,7 +27,7 @@ public class JavaArrayListMethods {
 		
 		
 		//2.
-		//add(): 
+		//add(int index, element e): 
 		//Inserts the specified element at the specified position in this list
 		//(optional operation). Shifts the element currently at that position(if any) and 
 		//any subsequent elements to the right (adds one to their indices).
@@ -41,9 +41,9 @@ public class JavaArrayListMethods {
 		List<Integer> l2 = new ArrayList<>();
 		l2.add(7);
 		l2.addAll(l1);
-		System.out.println(l2);//[0, 1, 2, 3, 3, 4, 5]
+		System.out.println(l2);//[7, 0, 1, 2, 3, 3, 4, 5]
 		l2.add(7);
-		System.out.println(l2);//[0, 1, 2, 3, 3, 4, 5, 7]
+		System.out.println(l2);//[7, 0, 1, 2, 3, 3, 4, 5, 7]
 		
 		
 		//4.

@@ -10,8 +10,7 @@ public class JavaLinkedList {
 		/*
 		 * 
 		 Java LinkedList:
-		 In the previous chapter, you learned about the ArrayList class. The LinkedList class is 
-		 almost identical to the ArrayList:
+		 The LinkedList class is almost identical to the ArrayList:
 		 * 
 		 * */
 
