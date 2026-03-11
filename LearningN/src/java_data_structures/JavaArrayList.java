@@ -327,6 +327,44 @@ public class JavaArrayList {
 		 System.out.println(cars);
 		 System.out.println(cars.size());
 		 
+		 
+		 
+		 /*
+		  * 
+		  ArrayList Constructors in Java:->
+		  Java provides multiple constructors to create an ArrayList based on different 
+		  requirements:
+		  1. ArrayList(): Creates an empty ArrayList with default initial capacity 10.
+
+			 ArrayList<Integer> arr = new ArrayList<>();
+		  * */
+		 
+		 ArrayList<String> arr1 = new ArrayList<>();
+		 arr1.add("100");
+		 arr1.add("1000");
+		 arr1.add("10000");
+		 arr1.add("100000");
+		 
+		 /*
+		  * 
+		  2. ArrayList(Collection<? extends E> c): Creates an ArrayList initialized with 
+		     elements from the specified collection. 		  
+		  * */
+		 
+		 ArrayList<String> arr2 = new ArrayList<>(arr1);
+		 arr2.add("10");
+		 System.out.println(arr2);
+		 //[100, 1000, 10000, 100000, 10]
+		 arr2.add(0, arr2.get(arr2.size()-1));
+		 System.out.println(arr2);
+		 //[10, 100, 1000, 10000, 100000, 10]
+		 
+		 /*
+		  * 
+		  3. ArrayList(int initialCapacity): This constructor is used to build an array list 
+		     with the initial capacity being specified.
+		  * */
+		 ArrayList<Double> arr3 = new ArrayList<>(20);
 	}
 	
 	public void arrayListMethods() {
