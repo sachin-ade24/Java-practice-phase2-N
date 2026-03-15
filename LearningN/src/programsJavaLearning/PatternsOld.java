@@ -1,4 +1,4 @@
-package javaLearning;
+package programsJavaLearning;
 
 public class PatternsOld {
 
