@@ -536,6 +536,14 @@ public class JavaArrayListMethods {
 	    System.out.println(chemList);
 	    //[NaCl, H2O2, H2SO4, HCl]
 	    
+	    
+	    ArrayList<String> strArrLst = new ArrayList<>();
+	    strArrLst.add("Marathi");
+	    strArrLst.add("Hindi");
+	    strArrLst.add("Lamani");
+	    strArrLst.add("English");
+	    
+	    
 	    ArrayList<String> myArrayList = ArrayToArrayListConversion.arrayToArrayList(strArray);
 	    System.out.println(myArrayList);
 	    //[Solid, Liquid, Gas, Plasma, Bose-Einstein Condensate]
