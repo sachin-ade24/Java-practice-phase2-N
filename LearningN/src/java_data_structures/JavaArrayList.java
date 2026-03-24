@@ -203,6 +203,18 @@ public class JavaArrayList {
 		 System.out.println(numbers);//[10, 21, 5, 29, 71]
 		 Collections.sort(numbers);
 		 System.out.println(numbers);//[5, 10, 21, 29, 71]
+		 Collections.reverse(numbers);
+		 System.out.println(numbers);//[71, 29, 21, 10, 5]
+		 int maxNumbers = Collections.max(numbers);
+		 System.out.println(maxNumbers);//71
+		 int minNumbers = Collections.min(numbers);
+		 System.out.println(minNumbers);//5
+		 Collections.rotate(numbers, 2);//rotate() --> right
+		 System.out.println("Rotate right: " + numbers);//[10, 5, 71, 29, 21]
+		 Collections.rotate(numbers, -2);//rotate --> left
+		 System.out.println("Rotate left: " + numbers);//[71, 29, 21, 10, 5]
+		 Collections.shuffle(numbers);
+		 System.out.println("Shuffle randomly: " + numbers);//[21, 29, 5, 10, 71]
 		 
 		 
 		 /*

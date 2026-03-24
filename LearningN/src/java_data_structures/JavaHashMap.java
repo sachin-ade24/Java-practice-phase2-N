@@ -134,6 +134,14 @@ public class JavaHashMap {
 			System.out.println(s);
 		}
 		
+		System.out.println("====================================");
+		
+		for(Entry<String, Integer> s: st1) {
+			System.out.println(s.getKey() + ": " + s.getValue());
+		}
+		
+		System.out.println("====================================");
+		
 		Object[] obj1 = st1.toArray();
 		System.out.println(Arrays.toString(obj1));
 		/*
@@ -166,6 +174,8 @@ public class JavaHashMap {
 			}
 		}
 		
+		//=================================================================================
+		
 		hashMap.clear();
 		System.out.println(hashMap);//{}
 		
@@ -181,6 +191,20 @@ public class JavaHashMap {
 		names.put("Supriya", "Wadate");
 		System.out.println(names);
 		//{Kalpana= Rathod, Supriya=Wadate, Sachin= Ade}
+		
+		
+		/*
+		 Integer java.util.HashMap.getOrDefault (Object key, Integer defaultValue):
+		 Returns the value to which the specified key is mapped, or defaultValue if this map 
+		 contains no mapping for the key.
+		 * */
+		int[] intArray = {1, 0, 7, 9, 0, 1, 7};
+		HashMap<Integer, Integer> hshMp = new HashMap<>();
+		for(int i1=0; i1<intArray.length; i1++) {
+			hshMp.put(intArray[i1], hshMp.getOrDefault(intArray[i1], 0)+1);
+		}
+		System.out.println(hshMp);
+		
 	}
 
 }

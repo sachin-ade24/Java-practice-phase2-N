@@ -3,6 +3,9 @@ package java_data_structures;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class Program_FrequencyCount {
 
@@ -82,6 +85,47 @@ public class Program_FrequencyCount {
 			The frequency of p is: 1
 		   * 
 		   * */
+		  
+		  
+		  //Frequency Count using HashMap:
+		  int[] intArray = {1, 0, 7, 9, 0, 1, 7};
+		  HashMap<Integer, Integer> hshMp = new HashMap<>();
+		  for(int i1=0; i1<intArray.length; i1++) {
+			  hshMp.put(intArray[i1], hshMp.getOrDefault(intArray[i1], 0)+1);
+		  }
+		  System.out.println(hshMp);		  
+		  
+		  
+		  //a Java program to count the frequency of each character in the given string using 
+		  //a Map (specifically, HashMap):
+		  
+		  //1.
+		  String str = "I love Java and Selenium. Only Java and Selenium.";
+		  String[] strArr = str.split(" ");
+		  HashMap<String, Integer> wordHashMap = new HashMap<>();
+		  for(String s: strArr) {
+			  wordHashMap.put(s, wordHashMap.getOrDefault(s, 0)+1);
+		  }
+		  System.out.println(wordHashMap);
+		  
+		  //2.
+		  String str1 = "I love Java and Selenium. Only Java and Selenium.";
+		  char[] charArray = str1.toCharArray();
+		  TreeMap<Character, Integer> treeMap1 = new TreeMap<>();
+		  for(char c: charArray) {
+			  treeMap1.put(c, treeMap1.getOrDefault(c, 0)+1);
+		  }
+		  System.out.println(treeMap1);
+		  /*
+		   { =8, .=2, I=1, J=2, O=1, S=2, a=6, d=2, e=5, i=2, l=4, m=2, n=5, o=1, u=2, v=3, y=1}
+		   * */
+		  System.out.println(treeMap1.entrySet());
+		  /*
+		   [ =8, .=2, I=1, J=2, O=1, S=2, a=6, d=2, e=5, i=2, l=4, m=2, n=5, o=1, u=2, v=3, y=1]
+		  */
+		  for(Map.Entry<Character, Integer> entry: treeMap1.entrySet()) {
+			  System.out.println("The frequency of character '" + entry.getKey() + "' is: " + entry.getValue());
+		  }
 		  
 		  
 	}
